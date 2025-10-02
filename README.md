@@ -30,9 +30,7 @@ För att förstå vårt uppdrag så behöver vi först förstå varför hemsidan
 
 
 
+## Färgpalett
+<img width="1241" height="249" alt="image" src="https://github.com/user-attachments/assets/c9b56799-6520-4307-a795-507f259d80d9" />
 
 
-
-
-
-<img width="770" height="434" alt="image" src="https://github.com/user-attachments/assets/bce68e70-8bc6-4551-8e5b-71c85c431cc6" />
