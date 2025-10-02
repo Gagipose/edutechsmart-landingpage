@@ -45,6 +45,8 @@ För att förstå vårt uppdrag så behöver vi först förstå varför hemsidan
 | Footer| Ej påbörjad| |
 | Dark Mode| Ej påbörjad| Beroende på användarens systeminställningar |
 
+<img width="1248" height="259" alt="image" src="https://github.com/user-attachments/assets/bf56aff4-d9a9-402c-adc4-d48acfd3a8e3" />
+
 
 
 ## Tekniker vi använder:
