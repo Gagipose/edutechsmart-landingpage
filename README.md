@@ -37,9 +37,9 @@ För att förstå vårt uppdrag så behöver vi först förstå varför hemsidan
 ## Projektstatus
 | Funktion | Status | Kommentar |
 | -------- | ------- | ------- |
-| Header | Ej påbörjad| |
+| Header | Påbörjad| |
 | Menyknapp| Ej påbörjad| |
-| Hero | Ej påbörjad| |
+| Hero | Påbörjad| |
 | Testomonials | Ej påbörjad| |
 | Kontaktsida| Ej påbörjad| |
 | Footer| Ej påbörjad| |
