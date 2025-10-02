@@ -3,6 +3,7 @@
 
 Vårt uppdrag är att uppgradera [Hemsidan](http://www.github.com](https://www.edutechsmart.com/) EduTechSmart Global AB:s hemsida
 
+Precis som Edutechsmarts kunder fokuserar på att göra livet lättare för sina brukare, så är vårt mål att göra hemsidan så lätt, tydlig och professionel som möjligt. Genom att implementera en bra användarupplevelse så slipper Edutech gå miste om potentiella kunder. En hemsida som signalerar "det här tog tid att skapa" skapar ett stort förtoende i varumärket och leder till att Edutechsmart kan hjälpa flera företag. 
 
 
 ## Vad är syftet med hemsidan?
@@ -33,4 +34,26 @@ För att förstå vårt uppdrag så behöver vi först förstå varför hemsidan
 ## Färgpalett
 <img width="1241" height="249" alt="image" src="https://github.com/user-attachments/assets/c9b56799-6520-4307-a795-507f259d80d9" />
 
+## Projektstatus
+| Funktion | Status | Kommentar |
+| -------- | ------- | ------- |
+| Header | Ej påbörjad| |
+| Menyknapp| Ej påbörjad| |
+| Hero | Ej påbörjad| |
+| Testomonials | Ej påbörjad| |
+| Kontaktsida| Ej påbörjad| |
+| Footer| Ej påbörjad| |
+| Dark Mode| Ej påbörjad| Beroende på användarens systeminställningar |
 
+
+
+## Tekniker vi använder:
+* HTML
+* CSS
+* JavaScript
+
+## Team:
+* David (github link)
+* Sahar (github link)
+* Veronica (github link)
+* Karam (github link)
