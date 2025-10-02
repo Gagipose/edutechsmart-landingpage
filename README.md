@@ -47,6 +47,10 @@ För att förstå vårt uppdrag så behöver vi först förstå varför hemsidan
 
 <img width="1248" height="259" alt="image" src="https://github.com/user-attachments/assets/bf56aff4-d9a9-402c-adc4-d48acfd3a8e3" />
 
+## Lighthouse på gamla hemsidan
+<img src="https://github.com/user-attachments/assets/2ac66409-f171-4f01-b1d1-6e7f06a2345b" alt="image" width="354" />
+<img src="https://github.com/user-attachments/assets/2e3d8b92-29d6-4296-beea-f5b9fa1d3896" alt="image" width="356" />
+
 
 
 ## Tekniker vi använder:
