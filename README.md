@@ -1,7 +1,7 @@
 # Edutechsmart Landingpage
 
 
-Vårt uppdrag är att uppgradera [Hemsidan](http://www.github.com](https://www.edutechsmart.com/) EduTechSmart Global AB:s hemsida
+Vårt uppdrag är att uppgradera EduTechSmart Global AB:s [hemsida.](https://www.edutechsmart.com/)
 
 Precis som Edutechsmarts kunder fokuserar på att göra livet lättare för sina brukare, så är vårt mål att göra hemsidan så lätt, tydlig och professionel som möjligt. Genom att implementera en bra användarupplevelse så slipper Edutech gå miste om potentiella kunder. En hemsida som signalerar "det här tog tid att skapa" skapar ett stort förtoende i varumärket och leder till att Edutechsmart kan hjälpa flera företag. 
 
