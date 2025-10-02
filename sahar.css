@@ -1,0 +1,20 @@
+/* Mobile first: default styles */
+body {
+  font-size: 16px;
+  padding: 1rem;
+}
+
+/* Larger screens: add more styling */
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 20px;
+    padding: 3rem;
+  }
+}
