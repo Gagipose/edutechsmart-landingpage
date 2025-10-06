@@ -1,16 +1,18 @@
 const menuIcon = document.querySelector("#menu-icon");
 const menu = document.querySelector("#menu");
 const modeIcon = document.querySelector(".mode-icon");
+const logo = document.querySelector(".logo");
 
 menuIcon.addEventListener("click", () => {
   menu.classList.toggle("open");
 });
 
 // Darkmode och lightmode
-// Funktion för rätt ikon
+// Funktion för rätt ikon och logga
 function updateModeIcon() {
   const isDark = document.body.classList.contains("dark-mode");
   modeIcon.src = isDark ? "icon/dark-mode.svg" : "icon/light-mode.svg";
+  logo.src = isDark ? "images/logo-white.png" : "images/logo.png";
 }
 // Funktion när knappen klickas
 function toggleMode() {
@@ -23,7 +25,14 @@ function toggleMode() {
   // Sparar valet i localStorage
 }
 // När man laddar om sidan: kollar om light mode är valt, annars används dark mode
-if (localStorage.getItem("darkMode") === "false") {
-  toggleMode();
-  // Växlar till light mode om darkMode är false
-}
+window.addEventListener("DOMContentLoaded", () => {
+  const darkMode = localStorage.getItem("darkMode");
+  if (darkMode === "false") {
+    document.body.classList.remove("dark-mode");
+    document.body.classList.add("light-mode");
+  } else {
+    document.body.classList.add("dark-mode");
+    document.body.classList.remove("light-mode");
+  }
+  updateModeIcon();
+});
