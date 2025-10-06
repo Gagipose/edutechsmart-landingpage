@@ -143,6 +143,10 @@ body.light-mode nav li {
   border-bottom: 1px solid var(--color-grey-light);
 }
 
+body.light-mode nav a {
+  color: var(--color-black);
+}
+
 /* Hero */
 .hero {
   height: 100vh;
