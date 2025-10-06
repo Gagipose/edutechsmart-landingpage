@@ -24,7 +24,7 @@ body.light-mode a {
 
 :root {
     --color-primary: #64B5F6;
-    --color-primary-dark: #1565C0;
+    --color-primary-dark: #306199;
     --color-primary-light: #BBDEFB;
     --color-white: #F4F4F4;
     --color-black: #1E1E1E;
@@ -312,24 +312,177 @@ body.light-mode nav li {
   transform: scale(1.1);
 }
 
-/* Footer bild*/
+/* Form title styling */
 
-footer {
-  background-color: var(--color-primary-light);
-  color: #fff;
-  text-align: center;
-  padding: 20px;
+.form-title {
+    text-align: center;
+    color: var(--color-white);
+    margin-top: 40px;
 }
 
-footer .phone-link img {
-  width: 75px;
-  height: 75px;
-  cursor: pointer;
-  transition: transform 0.3s;
+body.light-mode .form-title{
+  color: var(--color-primary-dark);
 }
 
-footer .phone-link img:hover {
-  transform: scale(1.2);
+.form-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 40px 20px;
+}
+
+form {
+    flex: 1;
+    background: var(--color-primary-dark);
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(42,61,102,0.08);
+    max-width: 400px;
+    color: var(--color-white);
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--color-white);
+    font-weight: 500;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 1px solid var(--color-grey-light);
+    border-radius: 5px;
+    font-size: 1rem;
+    background: var(--color-white);
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+button[type="submit"] {
+    background: var(--color-primary-light);
+    color: var(--color-black);
+    border: none;
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+button[type="submit"]:hover {
+    background: var(--color-primary);
+}
+
+.contact-img {
+  display: none;
+}
+.robot-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+/* Responsive adjustments */
+.info-row {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px; /* Increased gap for more space between boxes */
+    margin: 40px 20px 0 20px; /* Increased top margin for spacing */
+    flex-wrap: wrap;
+}
+
+.info-box {
+    flex: 1;
+    min-width: 150px;
+    max-width: 250px;
+    padding: 20px 10px; /* Increased padding for bigger boxes */
+    font-size: 1.1rem;
+    background-color: var(--color-primary-light);
+    border-radius: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        text-align: center;
+        color: var(--color-grey-dark);
+}
+
+.info-box h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    border-bottom:1px solid var(--color-grey-dark);
+}
+
+.info-box a {
+    color: var(--color-grey-dark);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.form-title-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 0;
+}
+
+.title-icon {
+    width: 20px;
+    object-fit: contain;
+}
+
+/*footer*/
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: 20px 20px;
+    font-size: 14px;
+}
+
+.footer-logo img {
+    height: 40px;
+}
+
+.footer-info {
+    text-align: center;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-info p {
+    margin: 20px 0;
+}
+
+.footer-info a {
+    color: var(--color-white);
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+.footer-info a:hover {
+    text-decoration: underline;
 }
 
 /*Responsivitet*/
@@ -340,7 +493,7 @@ footer .phone-link img:hover {
     font-size: 18px;
   }
 
-  section.testimonials-section {
+  .testimonials-section {
     flex-wrap: wrap;
     overflow-x: visible;
     justify-content: center;
@@ -373,6 +526,19 @@ footer .phone-link img:hover {
     .study-text::before {
         display: none;
     }
+
+    .form-row {
+      gap: 20px;
+    }
+
+    .contact-img {
+    display: block;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(42,61,102,0.08);
+    height: 700px;
+  }
 }
 
 @media (min-width: 1200px) {

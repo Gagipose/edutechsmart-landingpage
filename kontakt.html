@@ -1,35 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact us</title>
-</head>
-<body>
-    <h1>Contact Us</h1>
-    <form>
-        <label for="organization">Organization:</label><br>
-        <input type="text" id="organization" name="organization" required><br><br>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Kontakta oss</title>
+  </head>
+  <body class="dark-mode">
+    <header>
+      <img src="images/logo-dark-mode.png" alt="Logo" class="logo" />
+      <div class="header-icons">
+        <!-- Darkmode -->
+        <button onclick="toggleMode()" id="dark-mode-button">
+          <img
+            src="images/icon-dark-mode.svg"
+            alt="Dark Mode Icon"
+            class="mode-icon"
+          />
+        </button>
 
-        <label for="firstname">First Name:</label><br>
-        <input type="text" id="firstname" name="firstname" required><br><br>
+        <!-- Menu -->
+        <nav>
+          <div id="menu-container">
+            <button id="menu-icon">☰</button>
+            <ul id="menu">
+              <li><a href="index.html">Start</a></li>
+              <li><a href="#">Om oss</a></li>
+              <li><a href="#">Vår teknologi</a></li>
+              <li><a href="#">Utbildnings-portal</a></li>
+              <li><a href="#">Nyheter</a></li>
+              <li><a href="#">Kontakta oss</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-        <label for="lastname">Last Name:</label><br>
-        <input type="text" id="lastname" name="lastname" required><br><br>
+    <!--Kontakt-->
+    <main>
+      <h1 class="form-title">Kontakta oss</h1>
+      <div class="info-row">
+        <div class="info-box">
+          <div class="form-title-row">
+            <img
+              src="images/business-and-trade.png"
+              alt="EduTech Smart Logo"
+              class="title-icon"
+            />
+            <h3>Skellefteå Kontor</h3>
+          </div>
+          <p>
+            EduTech Smart Global AB Skellefteå Science City Laboratorgränd 9 931
+            88 Skellefteå Sweden
+          </p>
+        </div>
+        <div class="info-box">
+          <div class="form-title-row">
+            <img
+              src="images/business-and-trade.png"
+              alt="EduTech Smart Logo"
+              class="title-icon"
+            />
+            <h3>Umeå Kontor</h3>
+          </div>
+          <p>EduTech Smart Global AB Industrivägen 12 901 30 Umeå Sweden</p>
+        </div>
+        <div class="info-box">
+          <div class="form-title-row">
+            <img
+              src="images/telephone.png"
+              alt="EduTech Smart Logo"
+              class="title-icon"
+            />
+            <h3>Telefonnummer</h3>
+          </div>
+          <p>+46 73 40 00 345</p>
+        </div>
+        <div class="info-box">
+          <div class="form-title-row">
+            <img
+              src="images/mail.png"
+              alt="EduTech Smart Logo"
+              class="title-icon"
+            />
+            <h3>E-post</h3>
+          </div>
+          <p>info@edutechsmart.com</p>
+        </div>
+        <div class="info-box">
+          <div class="form-title-row">
+            <img
+              src="images/social.png"
+              alt="EduTech Smart Logo"
+              class="title-icon"
+            />
+            <h3>LinkedIn</h3>
+          </div>
+          <p>
+            <a
+              href="https://www.linkedin.com/company/edutechsmart"
+              target="_blank"
+              >Besök vår LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+      <h1 class="form-title">Kontaktformulär</h1>
+      <div class="form-row">
+        <form>
+          <label for="organization">Organisation:</label>
+          <input
+            type="text"
+            id="organization"
+            name="organization"
+            required
+          /><br />
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+          <label for="firstname">Förnamn:</label>
+          <input type="text" id="firstname" name="firstname" required /><br />
 
-        <label for="phone">Phone:</label><br>
-        <input type="tel" id="phone" name="phone"><br><br>
+          <label for="lastname">Efternamn:</label>
+          <input type="text" id="lastname" name="lastname" required /><br />
 
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+          <label for="email">E-post:</label>
+          <input type="email" id="email" name="email" required /><br />
 
-        <input type="checkbox" id="not-robot" name="not-robot" required>
-        <label for="not-robot">I am not a robot</label><br><br>
+          <label for="phone">Telefon:</label>
+          <input type="tel" id="phone" name="phone" /><br />
 
-        <button type="submit">Send</button>
-    </form>
-</body>
+          <label for="message">Meddelande:</label>
+          <textarea id="message" name="message" rows="4" required></textarea
+          ><br />
+
+          <div class="robot-row">
+            <input type="checkbox" id="not-robot" name="not-robot" required />
+            <label for="not-robot">Jag är inte en robot</label>
+          </div>
+          <br />
+
+          <button type="submit">Skicka</button>
+        </form>
+        <div>
+          <img
+            src="images/contact-us-2.jpg"
+            alt="Contact Us"
+            class="contact-img"
+            style="width: 300px"
+          />
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+</main>
+
+    <!--footer-->
+<footer>
+    <div class="footer-container">
+        <div class="footer-info">
+            <p>&copy; 2025 EduTech Smart Global AB</p>
+            <p>
+                <a href=".kontakt.html">Kontakta Oss</a> |
+                <a href="https://www.edutechsmart.com/about/">Om Oss</a> |
+                <a href="https://www.educatesmart.com/?lang=en">Utbildningsportal</a> <br/><br/><br/>
+                <a href="https://www.linkedin.com/company/edutechsmart" target="_blank"><i class="fa-brands fa-linkedin-in fa-2x" style="color: #f4f4f4;"></i></a> 
+                <a href="https://www.linkedin.com/company/edutechsmart" target="_blank"><i class="fa-brands fa-twitter fa-2x"style="color: #f4f4f4;"></i></a> 
+                <a href="https://www.linkedin.com/company/edutechsmart" target="_blank"><i class="fa-brands fa-instagram fa-2x" style="color: #f4f4f4;"></i></i></a> 
+                <a href="https://www.linkedin.com/company/edutechsmart" target="_blank"><i class="fa-brands fa-youtube fa-2x" style="color: #f4f4f4;"></i></a>
+            </p>
+        </div>
+    </div>
+</footer>
 </html>
