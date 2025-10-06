@@ -1,11 +1,37 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+
+
+/* Hero */
+
+.hero {
+    height: 100vh;
+    background: url("EduTechSmart bild.png") no-repeat center center / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+
 /* Mobile first: default styles */
 
 * {
   margin: 0;
-}
-
-body {
-  font-size: 16px;
 }
 
 /*Färgpalett*/
@@ -106,3 +132,4 @@ header {
     font-size: 20px;
   }
 }
+
