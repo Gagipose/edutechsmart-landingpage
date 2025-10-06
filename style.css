@@ -43,6 +43,28 @@ header {
     display: block;
 }
 
+.videoHolder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3vw;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+}
+
+/* stops video from shrinking or expanding too much */
+.youtubeVid {
+  padding: auto;
+  transition: .5s;
+  height: clamp(30px, 40vw, 300px);
+  width: clamp(30px, 80vw, 600px);
+}
+
+.youtubeVid:hover {
+  transform: scale(1.1);
+}
+
 /* Larger screens: add more styling */
 
 @media (min-width: 768px) {
