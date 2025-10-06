@@ -259,7 +259,27 @@ section.testimonials-section {
 @media (min-width: 1200px) {
   body {
     font-size: 20px;
-  }
+  }}
+}
+
+/* Footer bild*/
+
+footer {
+  background-color: #BBDEFB;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer .phone-link img {
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+footer .phone-link img:hover {
+  transform: scale(1.2);
   
   #menu-icon {
     display: none;
