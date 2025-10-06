@@ -8,7 +8,7 @@ body {
 a {
   text-decoration: none;
   color: var(--color-white);
-
+}
 
 /* Hero */
 
@@ -280,7 +280,7 @@ footer .phone-link img {
 
 footer .phone-link img:hover {
   transform: scale(1.2);
-  
+}
   #menu-icon {
     display: none;
   }

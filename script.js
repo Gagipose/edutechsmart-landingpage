@@ -18,7 +18,7 @@ menuIcon.addEventListener("click", () => {
     }
 });
 
-const modeIcon = document.querySelector(".mode-icon");
+
 
 // Darkmode och lightmode
 // Funktion för rätt ikon och logga
