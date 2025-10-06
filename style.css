@@ -43,6 +43,15 @@ header {
     display: block;
 }
 
+.youtubeVid {
+  padding: auto;
+  transition: .5s;
+}
+
+.youtubeVid:hover {
+  transform: scale(1.1);
+}
+
 /* Larger screens: add more styling */
 
 @media (min-width: 768px) {
