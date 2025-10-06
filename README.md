@@ -35,15 +35,15 @@ För att förstå vårt uppdrag så behöver vi först förstå varför hemsidan
 <img width="1241" height="249" alt="image" src="https://github.com/user-attachments/assets/c9b56799-6520-4307-a795-507f259d80d9" />
 
 ## Projektstatus
-| Funktion | Status | Kommentar |
-| -------- | ------- | ------- |
-| Header | Påbörjad| |
-| Menyknapp| Ej påbörjad| |
-| Hero | Påbörjad| |
-| Testomonials | Ej påbörjad| |
-| Kontaktsida| Ej påbörjad| |
-| Footer| Ej påbörjad| |
-| Dark Mode| Ej påbörjad| Beroende på användarens systeminställningar |
+| Funktion | Status |
+| -------- | ------- |
+| Header | Klar|
+| Menyknapp| Klar|
+| Hero | Klar|
+| Testomonials | Klar|
+| Kontaktsida| Klar |
+| Footer| Klar |
+| Dark Mode| Klar | 
 
 <img width="1248" height="259" alt="image" src="https://github.com/user-attachments/assets/bf56aff4-d9a9-402c-adc4-d48acfd3a8e3" />
 
