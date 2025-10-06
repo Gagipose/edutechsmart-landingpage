@@ -1,19 +1,10 @@
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    font-size: 16px;
 }
 
-/* Header och meny */
-header {
-    position: relative;
-    z-index: 10; /* viktigt så den ligger ovan hero */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #1565c0;
-    color: white;
-}
 
 
 /* Hero */
@@ -35,4 +26,110 @@ header {
     border-radius: 10px;
 }
 
+
+
+/* Mobile first: default styles */
+
+* {
+  margin: 0;
+}
+
+/*Färgpalett*/
+
+:root {
+  --color-primary: #64b5f6;
+  --color-primary-dark: #1565c0;
+  --color-primary-light: #bbdefb;
+  --color-white: #f4f4f4;
+  --color-black: #1e1e1e;
+  --color-grey: #ccc;
+}
+/* Darkmode */
+button {
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffff;
+}
+.dark-mode button:hover{
+  background-color: #4a4a4a;
+}
+.mode-icon {
+  width: 24px;
+  height: 24px;
+}
+.light-mode {
+  background-color: #ffff;
+  color: #0000;
+}
+.light-mode button:hover {
+  background-color: #e0e0e0;
+}
+
+
+/*Header*/
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 1px solid var(--color-grey);
+}
+
+.logo {
+  height: 50px;
+}
+
+/*Meny*/
+
+#menu {
+  display: none;
+}
+
+#menu open {
+  display: block;
+}
+
+.videoHolder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3vw;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+}
+
+/* stops video from shrinking or expanding too much */
+.youtubeVid {
+  padding: auto;
+  transition: .5s;
+  height: clamp(30px, 40vw, 300px);
+  width: clamp(30px, 80vw, 600px);
+}
+
+.youtubeVid:hover {
+  transform: scale(1.1);
+}
+
+/* Larger screens: add more styling */
+
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+}
 

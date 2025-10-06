@@ -1,20 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edutechsmart</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>EduTechSmart | Vårdutbildningar Online</title>
+    
+  </head>
+  <!-- Darkmode -->
+  <body class="dark-mode">
+    <button onclick="toggleMode()">
+      <img src="icon/dark-mode.svg" alt="Dark Mode Icon" class="mode-icon" />
+    </button>
 
-
-<body>
-<section class="hero">
+    <header>
+      <img src="images/logo.png" alt="Logo" class="logo" />
+      <nav>
+        <button id="menu-icon">☰</button>
+        <ul id="menu">
+          <li><a href="#">Start</a></li>
+          <li><a href="#">Om oss</a></li>
+          <li><a href="#">Vår teknologi</a></li>
+          <li><a href="#">Utbildnings-portal</a></li>
+          <li><a href="#">Nyheter</a></li>
+          <li><a href="#">Kontakta oss</a></li>
+        </ul>
+      </nav>
+    </header>
+<main>
+  <section class="hero">
 <div class="hero-content">
     <h1>Welcome to EduTechSmart</h1>
     <p>Your gateway to innovative educational technology solutions.</p>
 </div>
 </section>
-    
-</body>
+    <article class="videoHolder">
+        <iframe src="https://www.youtube.com/embed/ExFluoFsb08" frameborder="0" class="youtubeVid"></iframe>
+        <iframe src="https://www.youtube.com/embed/YNJCmB9kYBo" frameborder="0" class="youtubeVid"></iframe>
+    </article>
+
+</main>
+    <script src="script.js"></script>
+  </body>
 </html>
