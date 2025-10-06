@@ -1,51 +1,40 @@
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-}
-
-
-
-/* Hero */
-
-.hero {
-    height: 100vh;
-    background: url("EduTechSmart bild.png") no-repeat center center / cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    position: relative;
-}
-
-.hero-content {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-}
-
-
-
-/* Mobile first: default styles */
+/*Defaults*/
 
 * {
   margin: 0;
 }
 
-/*Färgpalett*/
+body {
+  font-size: 16px;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+body.light-mode a {
+  color: var(--color-black);
+}
+
+/*Color palatte*/
 
 :root {
-  --color-primary: #64b5f6;
-  --color-primary-dark: #1565c0;
-  --color-primary-light: #bbdefb;
-  --color-white: #f4f4f4;
-  --color-black: #1e1e1e;
-  --color-grey: #ccc;
+    --color-primary: #64B5F6;
+    --color-primary-dark: #1565C0;
+    --color-primary-light: #BBDEFB;
+    --color-white: #F4F4F4;
+    --color-black: #1E1E1E;
+    --color-grey-light: #ccc;
+    --color-grey-dark: #444;
 }
+
 /* Darkmode */
-button {
+
+#dark-mode-button {
   padding: 10px;
   cursor: pointer;
   border: none;
@@ -53,70 +42,167 @@ button {
   background-color: transparent;
   transition: background-color 0.3s ease;
 }
+
 .dark-mode {
-  background-color: #1a1a1a;
-  color: #ffff;
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
+
 .dark-mode button:hover{
-  background-color: #4a4a4a;
+  background-color: var(--color-grey-dark);
 }
+
 .mode-icon {
   width: 24px;
   height: 24px;
 }
+
 .light-mode {
-  background-color: #ffff;
-  color: #0000;
-}
-.light-mode button:hover {
-  background-color: #e0e0e0;
+  background-color: var(--color-white);
+  color: var(--color-black);
 }
 
+.light-mode button:hover {
+  background-color: var(--color-grey-light);
+}
 
 /*Header*/
 
 header {
+    position: sticky;
+    top: 0;
+    z-index: 998;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--color-grey-dark);
+    background-color: var(--color-black);
+}
+
+.header-icons {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  border-bottom: 1px solid var(--color-grey);
 }
 
 .logo {
   height: 50px;
 }
 
-/*Meny*/
+body.light-mode header {
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-grey-light);
+}
+
+/*Menu*/
+
+#menu-icon {
+  background-color: var(--color-primary);
+  border: none;
+  color: var(--color-white);
+  font-size: 1.5rem;
+  width: 60px;
+  border-radius: 25px;
+}
 
 #menu {
   display: none;
 }
 
-#menu open {
-  display: block;
+#menu.open {
+    display: flex;
+    flex-direction: column;
 }
 
-.videoHolder {
+#menu-container.open {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+    background-color: var(--color-black);
+    border-left: 1px solid var(--color-grey-dark);
+    z-index: 999;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    padding: 20px;
+}
+
+body.light-mode #menu-container.open {
+  background-color: var(--color-white);
+  border-left: 1px solid var(--color-grey-light);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+nav li {
+  padding: 40px;
+  border-bottom: 1px solid var(--color-grey-dark);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+body.light-mode nav li {
+  border-bottom: 1px solid var(--color-grey-light);
+}
+
+/* Hero */
+
+.hero {
+  height: 100vh;
+  background: url("images/EduTechSmart\ bild.png") no-repeat center center / cover;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 3vw;
-  padding-top: 3vw;
-  padding-bottom: 3vw;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
 }
 
-/* stops video from shrinking or expanding too much */
-.youtubeVid {
-  padding: auto;
-  transition: .5s;
-  height: clamp(30px, 40vw, 300px);
-  width: clamp(30px, 80vw, 600px);
+.hero-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
 }
 
-.youtubeVid:hover {
-  transform: scale(1.1);
+/*Johanna CSS*/
+
+.study-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.study-image{
+  width: 100%;
+  height: auto;
+}
+
+.study-text h2{
+    font-size: 28px;
+    margin-bottom: 26px;
+}
+
+.study-text::before {
+  content: "";
+  display: block;
+  width: 100px;          
+  height: 2px;
+  background-color: var(--color-primary);
+  margin: 16px auto 0;  /* centrerad under bilden */
+  margin-bottom: 20px;
+}
+
+.study-text{
+    padding: 0 1rem;
 }
 
 /* Testimonials */
@@ -132,6 +218,12 @@ section.testimonials-section {
   gap: 1rem;
   padding-bottom: 1rem;
   -webkit-overflow-scrolling: touch;
+}
+
+.testimonials-container {
+  background: linear-gradient(135deg, var(--color-primary-dark), rgba(255, 255, 255, 0.1));
+  backdrop-filter: blur(12px);
+  padding: 20px;
 }
 
 .testimonials {
@@ -191,21 +283,58 @@ section.testimonials-section {
   color: var(--color-primary);
 }
 
-/* Larger screens: add more styling */
+/*Youtube-videor*/
 
+.videoHolder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3vw;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+  margin: 20px 0;
+}
+
+/* stops video from shrinking or expanding too much */
+.youtubeVid {
+  padding: auto;
+  transition: .5s;
+  height: clamp(30px, 40vw, 300px);
+  width: clamp(30px, 80vw, 600px);
+}
+
+.youtubeVid:hover {
+  transform: scale(1.1);
+}
+
+/* Footer bild*/
+
+footer {
+  background-color: var(--color-primary-light);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer .phone-link img {
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+footer .phone-link img:hover {
+  transform: scale(1.2);
+}
+
+/*Responsivitet*/
 @media (min-width: 768px) {
+
   body {
     font-size: 18px;
   }
-}
 
-@media (min-width: 1200px) {
-  body {
-    font-size: 20px;
-  }
-}
-
-@media (min-width: 768px) {
   section.testimonials-section {
     flex-wrap: wrap;
     overflow-x: visible;
@@ -215,5 +344,54 @@ section.testimonials-section {
   .testimonials {
     flex: 0 0 calc(33% - 1rem);
     max-width: 320px;
+  }
+}
+
+  .study-container {
+        flex-direction: row;      
+        max-width: 900px;         
+        margin: 0 auto;          
+        align-items: center;
+        gap: 50px;
+        text-align: left;
+        padding: 20px;
+    }
+
+    .study-image {
+        width: 50%;
+
+    }
+
+    .study-text {
+        width: 50%;
+    }
+
+    .study-text::before {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+
+  #menu-icon {
+    display: none;
+  }
+
+  #menu {
+    display: flex;
+    gap: 40px;
+  }
+
+  nav li {
+    padding: 0;
+    border-bottom: none;
+    font-weight: normal;
+    font-size: 16px;
+  }
+  nav a:hover {
+    text-decoration: underline;
   }
 }
