@@ -38,6 +38,13 @@ button {
   width: 24px;
   height: 24px;
 }
+.light-mode {
+  background-color: #ffff;
+  color: #0000;
+}
+.light-mode button:hover {
+  background-color: #e0e0e0;
+}
 
 
 /*Header*/
