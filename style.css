@@ -119,6 +119,88 @@ header {
   transform: scale(1.1);
 }
 
+/* Testimonials Light Mode */
+section.testimonials-section {
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, var(--color-primary-dark), rgba(255, 255, 255, 0.1));
+  backdrop-filter: blur(12px);
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 20px;
+  margin-bottom: 1rem;
+  color: var(--color-white);
+}
+
+section.testimonials-section {
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  display: flex;
+  border-radius: 1rem;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.testimonials {
+  flex: 0 0 85%;
+  scroll-snap-align: start;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  color: var(--color-white);
+  backdrop-filter: blur(14px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 20px rgba(30, 30, 30, 0.25);
+  transform: perspective(600px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonials:active, .testimonials:hover {
+  transform: perspective(600px) scale(1.03);
+  box-shadow: 0 12px 30px var(--color-primary);
+}
+
+.testimonials-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.testimonials-img img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--color-primary);
+}
+
+.testimonials-text {
+  font-style: italic;
+  text-align: center;
+  color: var(--color-white);
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.testimonials-cite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8rem;
+  color: var(--color-primary-light);
+  opacity: 0.95;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  color: var(--color-primary);
+}
+
 /* Larger screens: add more styling */
 
 @media (min-width: 768px) {
@@ -133,3 +215,15 @@ header {
   }
 }
 
+@media (min-width: 768px) {
+  section.testimonials-section {
+    flex-wrap: wrap;
+    overflow-x: visible;
+    justify-content: center;
+  }
+
+  .testimonials {
+    flex: 0 0 calc(33% - 1rem);
+    max-width: 320px;
+  }
+}
