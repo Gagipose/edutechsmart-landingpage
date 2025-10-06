@@ -1,11 +1,40 @@
+body {
+  font-size: 16px;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
+
+
+/* Hero */
+
+.hero {
+    height: 100vh;
+    background: url("EduTechSmart bild.png") no-repeat center center / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+
 /* Mobile first: default styles */
 
 * {
-    margin: 0;
-}
-
-body {
-  font-size: 16px;
+  margin: 0;
 }
 
 /*Färgpalett*/
@@ -16,31 +45,207 @@ body {
     --color-primary-light: #BBDEFB;
     --color-white: #F4F4F4;
     --color-black: #1E1E1E;
-    --color-grey: #ccc;
+    --color-grey-light: #ccc;
+    --color-grey-dark: #444;
 }
+/* Darkmode */
+button {
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffff;
+}
+.dark-mode button:hover{
+  background-color: #4a4a4a;
+}
+.mode-icon {
+  width: 24px;
+  height: 24px;
+}
+.light-mode {
+  background-color: #ffff;
+  color: #0000;
+
+}
+.light-mode button:hover {
+  background-color: #e0e0e0;
+}
+
 
 /*Header*/
 
 header {
+    position: sticky;
+    top: 0;
+    z-index: 998;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    border-bottom: 1px solid var(--color-grey);
+    border-bottom: 1px solid var(--color-grey-dark);
+    background-color: var(--color-black);
 }
 
 .logo {
-    height: 50px;
+  height: 50px;
 }
 
 /*Meny*/
 
-#menu {
-    display: none;
+#menu-icon {
+  background-color: var(--color-primary-dark);
+  border: none;
+  color: var(--color-white);
+  font-size: 1.5rem;
+  width: 60px;
+  border-radius: 25px;
 }
 
-#menu open {
-    display: block;
+#menu {
+  display: none;
+}
+
+#menu.open {
+    display: flex;
+    flex-direction: column;
+}
+
+#menu-container.open {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+    background-color: var(--color-black);
+    border-left: 1px solid var(--color-grey-dark);
+    z-index: 999;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+nav li {
+  padding: 40px;
+  border-bottom: 1px solid var(--color-grey-dark);
+  font-weight: bold;
+  font-size: 18px;
+
+.videoHolder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3vw;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+}
+
+/* stops video from shrinking or expanding too much */
+.youtubeVid {
+  padding: auto;
+  transition: .5s;
+  height: clamp(30px, 40vw, 300px);
+  width: clamp(30px, 80vw, 600px);
+}
+
+.youtubeVid:hover {
+  transform: scale(1.1);
+}
+
+/* Testimonials Light Mode */
+section.testimonials-section {
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, var(--color-primary-dark), rgba(255, 255, 255, 0.1));
+  backdrop-filter: blur(12px);
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 20px;
+  margin-bottom: 1rem;
+  color: var(--color-white);
+}
+
+section.testimonials-section {
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  display: flex;
+  border-radius: 1rem;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.testimonials {
+  flex: 0 0 85%;
+  scroll-snap-align: start;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  color: var(--color-white);
+  backdrop-filter: blur(14px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 20px rgba(30, 30, 30, 0.25);
+  transform: perspective(600px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonials:active, .testimonials:hover {
+  transform: perspective(600px) scale(1.03);
+  box-shadow: 0 12px 30px var(--color-primary);
+}
+
+.testimonials-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.testimonials-img img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--color-primary);
+}
+
+.testimonials-text {
+  font-style: italic;
+  text-align: center;
+  color: var(--color-white);
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.testimonials-cite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8rem;
+  color: var(--color-primary-light);
+  opacity: 0.95;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  color: var(--color-primary);
 }
 
 /* Larger screens: add more styling */
@@ -54,7 +259,7 @@ header {
 @media (min-width: 1200px) {
   body {
     font-size: 20px;
-  }
+  }}
 }
 
 /* Footer bild*/
@@ -75,4 +280,36 @@ footer .phone-link img {
 
 footer .phone-link img:hover {
   transform: scale(1.2);
+  
+  #menu-icon {
+    display: none;
+  }
+
+  #menu {
+    display: flex;
+    gap: 40px;
+  }
+
+  nav li {
+    padding: 0;
+    border-bottom: none;
+    font-weight: normal;
+    font-size: 16px;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  section.testimonials-section {
+    flex-wrap: wrap;
+    overflow-x: visible;
+    justify-content: center;
+  }
+
+  .testimonials {
+    flex: 0 0 calc(33% - 1rem);
+    max-width: 320px;
+  }
 }
