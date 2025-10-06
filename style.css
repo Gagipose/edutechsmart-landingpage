@@ -1,5 +1,4 @@
 /*Defaults*/
-
 * {
   margin: 0;
 }
@@ -21,7 +20,6 @@ body.light-mode a {
 }
 
 /*Color palatte*/
-
 :root {
     --color-primary: #64B5F6;
     --color-primary-dark: #1565C0;
@@ -33,7 +31,6 @@ body.light-mode a {
 }
 
 /* Darkmode */
-
 #dark-mode-button {
   padding: 10px;
   cursor: pointer;
@@ -67,7 +64,6 @@ body.light-mode a {
 }
 
 /*Header*/
-
 header {
     position: sticky;
     top: 0;
@@ -95,7 +91,6 @@ body.light-mode header {
 }
 
 /*Menu*/
-
 #menu-icon {
   background-color: var(--color-primary);
   border: none;
@@ -153,7 +148,6 @@ body.light-mode nav li {
 }
 
 /* Hero */
-
 .hero {
   height: 100vh;
   background: url("images/EduTechSmart\ bild.png") no-repeat center center / cover;
@@ -172,7 +166,6 @@ body.light-mode nav li {
 }
 
 /*Johanna CSS*/
-
 .study-container{
     display: flex;
     flex-direction: column;
@@ -218,12 +211,6 @@ section.testimonials-section {
   gap: 1rem;
   padding-bottom: 1rem;
   -webkit-overflow-scrolling: touch;
-}
-
-.testimonials-container {
-  background: linear-gradient(135deg, var(--color-primary-dark), rgba(255, 255, 255, 0.1));
-  backdrop-filter: blur(12px);
-  padding: 20px;
 }
 
 .testimonials {
@@ -302,6 +289,7 @@ section.testimonials-section {
   transition: .5s;
   height: clamp(30px, 40vw, 300px);
   width: clamp(30px, 80vw, 600px);
+  border-radius: 1rem;
 }
 
 .youtubeVid:hover {
@@ -322,6 +310,7 @@ footer .phone-link img {
   height: 75px;
   cursor: pointer;
   transition: transform 0.3s;
+  border-radius: 1rem;
 }
 
 footer .phone-link img:hover {
@@ -329,25 +318,7 @@ footer .phone-link img:hover {
 }
 
 /*Responsivitet*/
-@media (min-width: 768px) {
-
-  body {
-    font-size: 18px;
-  }
-
-  section.testimonials-section {
-    flex-wrap: wrap;
-    overflow-x: visible;
-    justify-content: center;
-  }
-
-  .testimonials {
-    flex: 0 0 calc(33% - 1rem);
-    max-width: 320px;
-  }
-}
-
-  .study-container {
+.study-container {
         flex-direction: row;      
         max-width: 900px;         
         margin: 0 auto;          
@@ -355,21 +326,20 @@ footer .phone-link img:hover {
         gap: 50px;
         text-align: left;
         padding: 20px;
-    }
+  }
 
-    .study-image {
+.study-image {
         width: 50%;
 
-    }
+  }
 
-    .study-text {
+.study-text {
         width: 50%;
-    }
+  }
 
-    .study-text::before {
+.study-text::before {
         display: none;
-    }
-}
+  }
 
 @media (min-width: 1200px) {
   body {
@@ -393,5 +363,23 @@ footer .phone-link img:hover {
   }
   nav a:hover {
     text-decoration: underline;
+  }
+}
+
+@media (min-width: 768px) {
+
+  body {
+    font-size: 18px;
+  }
+
+  section.testimonials-section {
+    flex-wrap: wrap;
+    overflow-x: visible;
+    justify-content: center;
+  }
+
+  .testimonials {
+    flex: 0 0 calc(33% - 1rem);
+    max-width: 320px;
   }
 }
