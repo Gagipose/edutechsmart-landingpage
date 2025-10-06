@@ -1,5 +1,4 @@
 /*Defaults*/
-
 * {
   margin: 0;
 }
@@ -21,7 +20,6 @@ body.light-mode a {
 }
 
 /*Color palatte*/
-
 :root {
     --color-primary: #64B5F6;
     --color-primary-dark: #306199;
@@ -33,7 +31,6 @@ body.light-mode a {
 }
 
 /* Darkmode */
-
 #dark-mode-button {
   padding: 10px;
   cursor: pointer;
@@ -67,7 +64,6 @@ body.light-mode a {
 }
 
 /*Header*/
-
 header {
     position: sticky;
     top: 0;
@@ -95,7 +91,6 @@ body.light-mode header {
 }
 
 /*Menu*/
-
 #menu-icon {
   background-color: var(--color-primary);
   border: none;
@@ -153,7 +148,6 @@ body.light-mode nav li {
 }
 
 /* Hero */
-
 .hero {
   height: 100vh;
   background: url("images/EduTechSmart\ bild.png") no-repeat center center / cover;
@@ -172,7 +166,6 @@ body.light-mode nav li {
 }
 
 /*Johanna CSS*/
-
 .study-container{
     display: flex;
     flex-direction: column;
@@ -205,22 +198,12 @@ body.light-mode nav li {
     padding: 0 1rem;
 }
 
-/* Testimonials Light Mode */
-
-.testimonials-container {
+/* Testimonials */
+section.testimonials-section {
+  padding: 2rem 1rem;
+  margin: 1rem;
   background: linear-gradient(135deg, var(--color-primary-dark), rgba(255, 255, 255, 0.1));
   backdrop-filter: blur(12px);
-  padding: 20px;
-}
-
-.testimonials-container h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: var(--color-white);
-}
-
-.testimonials-section {
   overflow: auto;
   scroll-snap-type: x mandatory;
   display: flex;
@@ -306,6 +289,7 @@ body.light-mode nav li {
   transition: .5s;
   height: clamp(30px, 40vw, 300px);
   width: clamp(30px, 80vw, 600px);
+  border-radius: 1rem;
 }
 
 .youtubeVid:hover {
@@ -461,6 +445,14 @@ button[type="submit"]:hover {
     font-size: 14px;
 }
 
+footer .phone-link img {
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  border-radius: 1rem;
+}
+
 .footer-logo img {
     height: 40px;
 }
@@ -512,18 +504,18 @@ button[type="submit"]:hover {
         gap: 50px;
         text-align: left;
         padding: 20px;
-    }
+  }
 
-    .study-image {
+.study-image {
         width: 50%;
 
-    }
+  }
 
-    .study-text {
+.study-text {
         width: 50%;
-    }
+  }
 
-    .study-text::before {
+.study-text::before {
         display: none;
     }
 
@@ -563,5 +555,23 @@ button[type="submit"]:hover {
   }
   nav a:hover {
     text-decoration: underline;
+  }
+}
+
+@media (min-width: 768px) {
+
+  body {
+    font-size: 18px;
+  }
+
+  section.testimonials-section {
+    flex-wrap: wrap;
+    overflow-x: visible;
+    justify-content: center;
+  }
+
+  .testimonials {
+    flex: 0 0 calc(33% - 1rem);
+    max-width: 320px;
   }
 }
