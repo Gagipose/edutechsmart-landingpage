@@ -101,7 +101,13 @@ nav li {
   body {
     font-size: 18px;
   }
+}
 
+@media (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+  
   #menu-icon {
     display: none;
   }
@@ -120,11 +126,5 @@ nav li {
 
   nav a:hover {
     text-decoration: underline;
-  }
-}
-
-@media (min-width: 1200px) {
-  body {
-    font-size: 20px;
   }
 }
