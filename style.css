@@ -119,22 +119,12 @@ header {
   transform: scale(1.1);
 }
 
-/* Testimonials Light Mode */
+/* Testimonials */
 section.testimonials-section {
   padding: 2rem 1rem;
+  margin: 1rem;
   background: linear-gradient(135deg, var(--color-primary-dark), rgba(255, 255, 255, 0.1));
   backdrop-filter: blur(12px);
-}
-
-h2 {
-  text-align: center;
-  font-size: 2rem;
-  padding: 20px;
-  margin-bottom: 1rem;
-  color: var(--color-white);
-}
-
-section.testimonials-section {
   overflow: auto;
   scroll-snap-type: x mandatory;
   display: flex;
