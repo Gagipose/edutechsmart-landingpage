@@ -88,7 +88,7 @@ body.light-mode header {
 
 /*Menu*/
 #menu-icon {
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-dark);
   border: none;
   color: var(--color-white);
   font-size: 1.5rem;
@@ -439,7 +439,7 @@ button[type="submit"]:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: var(--color-primary);
+    background: var(--color-primary-dark);
     color: var(--color-white);
     padding: 20px 20px;
     font-size: 14px;
