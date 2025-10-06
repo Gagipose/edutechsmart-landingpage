@@ -215,8 +215,6 @@ section.testimonials-section {
   }
 }
 
-<<<<<<< Updated upstream
-=======
 @media (min-width: 768px) {
   section.testimonials-section {
     flex-wrap: wrap;
@@ -229,4 +227,3 @@ section.testimonials-section {
     max-width: 320px;
   }
 }
->>>>>>> Stashed changes
