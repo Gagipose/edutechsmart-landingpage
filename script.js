@@ -1,11 +1,24 @@
+//Hamburgermeny
+
 const menuIcon = document.querySelector("#menu-icon");
 const menu = document.querySelector("#menu");
+
+const menuContainer = document.querySelector("#menu-container")
 const modeIcon = document.querySelector(".mode-icon");
 const logo = document.querySelector(".logo");
 
 menuIcon.addEventListener("click", () => {
-  menu.classList.toggle("open");
+    menu.classList.toggle("open")
+    menuContainer.classList.toggle("open")
+    
+    if (menu.classList.contains("open")) {
+        menuIcon.innerText = "X"
+    } else {
+        menuIcon.innerText = "☰"
+    }
 });
+
+const modeIcon = document.querySelector(".mode-icon");
 
 // Darkmode och lightmode
 // Funktion för rätt ikon och logga
@@ -25,6 +38,13 @@ function toggleMode() {
   // Sparar valet i localStorage
 }
 // När man laddar om sidan: kollar om light mode är valt, annars används dark mode
+
+if (localStorage.getItem("darkMode") === "false") {
+  toggleMode();
+  // Växlar till light mode om darkMode är false
+}
+
+
 window.addEventListener("DOMContentLoaded", () => {
   const darkMode = localStorage.getItem("darkMode");
   if (darkMode === "false") {
@@ -36,3 +56,4 @@ window.addEventListener("DOMContentLoaded", () => {
   }
   updateModeIcon();
 });
+

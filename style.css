@@ -1,10 +1,13 @@
-
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
+  font-size: 16px;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: var(--color-white);
 
 
 /* Hero */
@@ -37,12 +40,13 @@ body {
 /*Färgpalett*/
 
 :root {
-  --color-primary: #64b5f6;
-  --color-primary-dark: #1565c0;
-  --color-primary-light: #bbdefb;
-  --color-white: #f4f4f4;
-  --color-black: #1e1e1e;
-  --color-grey: #ccc;
+    --color-primary: #64B5F6;
+    --color-primary-dark: #1565C0;
+    --color-primary-light: #BBDEFB;
+    --color-white: #F4F4F4;
+    --color-black: #1E1E1E;
+    --color-grey-light: #ccc;
+    --color-grey-dark: #444;
 }
 /* Darkmode */
 button {
@@ -67,6 +71,7 @@ button {
 .light-mode {
   background-color: #ffff;
   color: #0000;
+
 }
 .light-mode button:hover {
   background-color: #e0e0e0;
@@ -76,11 +81,15 @@ button {
 /*Header*/
 
 header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  border-bottom: 1px solid var(--color-grey);
+    position: sticky;
+    top: 0;
+    z-index: 998;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--color-grey-dark);
+    background-color: var(--color-black);
 }
 
 .logo {
@@ -89,13 +98,51 @@ header {
 
 /*Meny*/
 
+#menu-icon {
+  background-color: var(--color-primary-dark);
+  border: none;
+  color: var(--color-white);
+  font-size: 1.5rem;
+  width: 60px;
+  border-radius: 25px;
+}
+
 #menu {
   display: none;
 }
 
-#menu open {
-  display: block;
+#menu.open {
+    display: flex;
+    flex-direction: column;
 }
+
+#menu-container.open {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+    background-color: var(--color-black);
+    border-left: 1px solid var(--color-grey-dark);
+    z-index: 999;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+nav li {
+  padding: 40px;
+  border-bottom: 1px solid var(--color-grey-dark);
+  font-weight: bold;
+  font-size: 18px;
 
 .videoHolder {
   display: flex;
@@ -213,6 +260,25 @@ section.testimonials-section {
   body {
     font-size: 20px;
   }
+  
+  #menu-icon {
+    display: none;
+  }
+
+  #menu {
+    display: flex;
+    gap: 40px;
+  }
+
+  nav li {
+    padding: 0;
+    border-bottom: none;
+    font-weight: normal;
+    font-size: 16px;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
 }
 
 @media (min-width: 768px) {
