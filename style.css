@@ -15,10 +15,6 @@ a {
   color: var(--color-white);
 }
 
-body.light-mode a {
-  color: var(--color-black);
-}
-
 /*Color palatte*/
 :root {
     --color-primary: #64B5F6;
