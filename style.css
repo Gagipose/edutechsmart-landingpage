@@ -205,22 +205,12 @@ body.light-mode nav li {
     padding: 0 1rem;
 }
 
-/* Testimonials Light Mode */
-
-.testimonials-container {
+/* Testimonials */
+section.testimonials-section {
+  padding: 2rem 1rem;
+  margin: 1rem;
   background: linear-gradient(135deg, var(--color-primary-dark), rgba(255, 255, 255, 0.1));
   backdrop-filter: blur(12px);
-  padding: 20px;
-}
-
-.testimonials-container h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: var(--color-white);
-}
-
-.testimonials-section {
   overflow: auto;
   scroll-snap-type: x mandatory;
   display: flex;
@@ -228,6 +218,12 @@ body.light-mode nav li {
   gap: 1rem;
   padding-bottom: 1rem;
   -webkit-overflow-scrolling: touch;
+}
+
+.testimonials-container {
+  background: linear-gradient(135deg, var(--color-primary-dark), rgba(255, 255, 255, 0.1));
+  backdrop-filter: blur(12px);
+  padding: 20px;
 }
 
 .testimonials {
@@ -333,7 +329,6 @@ footer .phone-link img:hover {
 }
 
 /*Responsivitet*/
-
 @media (min-width: 768px) {
 
   body {
@@ -350,6 +345,7 @@ footer .phone-link img:hover {
     flex: 0 0 calc(33% - 1rem);
     max-width: 320px;
   }
+}
 
   .study-container {
         flex-direction: row;      
