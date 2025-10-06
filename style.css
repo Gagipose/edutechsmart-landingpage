@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header och meny */
+header {
+    position: relative;
+    z-index: 10; /* viktigt så den ligger ovan hero */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1565c0;
+    color: white;
+}
+
+
+/* Hero */
+
+.hero {
+    height: 100vh;
+    background: url("EduTechSmart bild.png") no-repeat center center / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
