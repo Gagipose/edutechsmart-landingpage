@@ -1,3 +1,5 @@
+//Hamburgermeny
+
 const menuIcon = document.querySelector("#menu-icon");
 const menu = document.querySelector("#menu");
 const menuContainer = document.querySelector("#menu-container")
