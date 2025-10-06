@@ -58,8 +58,11 @@ För att förstå vårt uppdrag så behöver vi först förstå varför hemsidan
 * CSS
 * JavaScript
 
-## Team:
-* David (github link)
-* Sahar (github link)
-* Veronica (github link)
-* Karam (github link)
+## Teamets GitHub-profiler:
+* [Ahm](https://github.com/ahmringholm)
+* [David](https://github.com/Gagipose)
+* [Johanna](https://github.com/johannaasandstrom)
+* [Karam](https://github.com/karamshaafout07-arch)
+* [Najah](https://github.com/NM-Codes)
+* [Sahar](https://github.com/saharrshirazii)
+* [Veronica](https://github.com/vczarnotta)
