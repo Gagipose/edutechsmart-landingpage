@@ -35,15 +35,15 @@ För att förstå vårt uppdrag så behöver vi först förstå varför hemsidan
 <img width="1241" height="249" alt="image" src="https://github.com/user-attachments/assets/c9b56799-6520-4307-a795-507f259d80d9" />
 
 ## Projektstatus
-| Funktion | Status | Kommentar |
-| -------- | ------- | ------- |
-| Header | Påbörjad| |
-| Menyknapp| Ej påbörjad| |
-| Hero | Påbörjad| |
-| Testomonials | Ej påbörjad| |
-| Kontaktsida| Ej påbörjad| |
-| Footer| Ej påbörjad| |
-| Dark Mode| Ej påbörjad| Beroende på användarens systeminställningar |
+| Funktion | Status |
+| -------- | ------- |
+| Header | Klar|
+| Menyknapp| Klar|
+| Hero | Klar|
+| Testomonials | Klar|
+| Kontaktsida| Klar |
+| Footer| Klar |
+| Dark Mode| Klar | 
 
 <img width="1248" height="259" alt="image" src="https://github.com/user-attachments/assets/bf56aff4-d9a9-402c-adc4-d48acfd3a8e3" />
 
@@ -58,8 +58,11 @@ För att förstå vårt uppdrag så behöver vi först förstå varför hemsidan
 * CSS
 * JavaScript
 
-## Team:
-* David (github link)
-* Sahar (github link)
-* Veronica (github link)
-* Karam (github link)
+## Teamets GitHub-profiler:
+* [Ahm](https://github.com/ahmringholm)
+* [David](https://github.com/Gagipose)
+* [Johanna](https://github.com/johannaasandstrom)
+* [Karam](https://github.com/karamshaafout07-arch)
+* [Najah](https://github.com/NM-Codes)
+* [Sahar](https://github.com/saharrshirazii)
+* [Veronica](https://github.com/vczarnotta)
