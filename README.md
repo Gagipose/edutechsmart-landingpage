@@ -45,11 +45,16 @@ För att förstå vårt uppdrag så behöver vi först förstå varför hemsidan
 | Footer| Klar |
 | Dark Mode| Klar | 
 
-<img width="1248" height="259" alt="image" src="https://github.com/user-attachments/assets/bf56aff4-d9a9-402c-adc4-d48acfd3a8e3" />
+<img width="1250" height="264" alt="image" src="https://github.com/user-attachments/assets/9d0ddae2-c395-43f0-8d0f-6225c65a574f" />
+
 
 ## Lighthouse på gamla hemsidan
 <img src="https://github.com/user-attachments/assets/2ac66409-f171-4f01-b1d1-6e7f06a2345b" alt="image" width="354" />
 <img src="https://github.com/user-attachments/assets/2e3d8b92-29d6-4296-beea-f5b9fa1d3896" alt="image" width="356" />
+
+## Lighthouse på nya hemsidan
+<img width="440" alt="image" src="https://github.com/user-attachments/assets/7b069544-c615-4df6-8181-79181e0b9cd3" />
+
 
 
 
